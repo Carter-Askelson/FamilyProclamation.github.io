@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Join Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Carter Askelson">
+        <meta name="description" content= "City Page by Carter Askelson">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   -->
+    </head>
+    <body onload="currentdate()">
+        <div id="announcement" style="display: block;"></div>
+        <header>
+            <picture>
+                <img src="images/site_logo.png" alt="Rexburg Commercial Guild Logo">
+            </picture>
+            <section class="heading">
+                <h1>Rexburg Commercial Guild</h1>
+                <div class="motto">"Sustainable Growth Forever"</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href= "#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a  href= "/wdd230/final_project/main.html">Home</a></li>         
+                <li><a href="/wdd230/final_project/city/city.html">City</a></li>
+                <li><a class= "active" href="/wdd230/final_project/join/join.html">Join</a></li>
+                <li><a href= "/wdd230/final_project/directory/directory.html">Directory</a></li>
+                <li><a href= "/wdd230/final_project/contact/contact.html">Contact</a></li>                                                    
+            </ul>
+        </nav>
+        <main>
+            <h2>Guild Entrance Form</h2>
+                <form method="GET" action="thanks.html">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label class="user_info">
+                            *First Name: <input type="text" name="first name" required>
+                        </label>
+                        <label class="user_info">
+                            *Last Name: <input type="text" name="last name" required>
+                        </label>
+                        <label class="user_info">
+                            Title: <input type="text" name="title" placeholder="CEO">
+                        </label>
+                        <label class="user_info">
+                            *Email: <input type="email" name="email" placeholder="guild-submission@guild.com" required>
+                        </label>
+                        <label class="user_info">
+                            Phone: <input type="tel" name="phone" title="Full 10 Number Phone Number Required" placeholder="012-345-6789">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="business_info">
+                            *Business Name: <input type="text" name="business name" required>
+                        </label>
+                        <label class="business_info">
+                            Business Address: <input type="text" name="business address" placeholder="missing address">
+                        </label>
+                        <label class="business_info">
+                            Business Website: <input type="text" name="business website" placeholder="www.placeholder.com">
+                        </label>
+                        <label class="business_info">
+                            Business Description: <input type="text" name="business description" placeholder="null">
+                        </label>
+                        <div class="business_info">
+                            <p>Membership Level:</p>
+                            <label class="radios"><input type="radio" name="membership_level" value="yes">
+                            <span class="option">Gold ($1000)</span>
+                            </label>
+                            <label class="radios"><input type="radio" name="membership_level" value="maybe">
+                            <span class="option">Silver ($400)</span>
+                            </label>
+                            <label class="radios"><input type="radio" name="membership_level" value="no">
+                            <span class="option">Bronze ($200)</span>
+                            </label>
+                            <label class="radios"><input type="radio" name="membership_level" value="no">
+                            <span class="option">Non-Profit ($100)</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Comments</legend>
+                        <label class="additional_comments">Comments: </label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </fieldset>
+                    <input class="submit_button" type="submit" value="Submit Inquiry">
+                </form>   
+        </main>
+    <footer>
+        <div>
+            &copy;<span id="copyright"></span> | Carter W. Askelson | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <a href="https://www.facebook.com/">
+            <img src="https://i.ibb.co/pxbPN2r/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com">
+            <img src="https://i.ibb.co/bPFbv3v/twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+        <script src="js/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfront/1.6.26/webfront.js"></script>
+    <script>WebFront.load({google: {families: ['Yaldevi', 'Arial']}})</script>
+</body>
+</html>
