@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Commercial Guild Mainpage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Carter Askelson">
+        <meta name="description" content= "Commercial Guild Mainpage by Carter Askelson">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <!--<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   -->
+    </head>
+    <body onload="currentdate()">
+        <div id="announcement" style="display: block;"></div>
+        <header>
+            <picture>
+                <img src="images/site_logo.png" alt="Rexburg Commercial Guild Logo">
+            </picture>
+            <section class="heading">
+                <h1>Rexburg Commercial Guild</h1>
+                <div class="motto">"Sustainable Growth Forever"</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href= "#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class= "active" href= "/wdd230/final_project/main.html">Home</a></li>         
+                <li><a href="/wdd230/final_project/city/city.html">City</a></li>
+                <li><a href="/wdd230/final_project/join/join.html">Join</a></li>
+                <li><a href= "/wdd230/final_project/directory/directory.html">Directory</a></li>
+                <li><a href= "/wdd230/final_project/contact/contact.html">Contact</a></li>                                                    
+            </ul>
+        </nav>
+        <main>
+            <div class="herodiv">
+                <picture>
+                <source media="(max-width: 840px)" srcset="images/rexburg-med.jpeg">
+                <source media="(max-width: 420px)" srcset="images/rexburg_small.jpg">
+                <img src="images/rexburg_large.jpeg" alt= "home img">
+                </picture>
+            </div>
+            <div class="cards">
+                <section>
+                    <div id="details">
+                        <h2>Crumbl Cookies</h2>
+                        <h4>Every Last Crumb</h4>
+                        <p>Main Product: Cookies</p>
+                        <p>Contact: (208) 254-5556</p>
+                        <p>Founded: 2017</p>
+                    </div>
+                    <img src="images/crumblcookies.jpg" alt="crumblcookies">
+                </section>
+                <section>
+                    <div id="details">
+                        <h2>Deseret Book</h2>
+                        <h4>Strengthen Individuals</h4>
+                        <p>Main Product: Spiritual Books</p>
+                        <p>Contact: (208) 356-9570</p>
+                        <p>Founded: 1866</p>
+                    </div>
+                    <img src="images/desertbook.jpg" alt="desertbook">
+                </section>
+                <section>
+                    <div id="details">
+                        <h2>The Hickory</h2>
+                        <h4>Put some South in your Mouth</h4>
+                        <p>Main Product: Barbecue</p>
+                        <p>Contact: (208) 359-2328</p>
+                        <p>Founded: 1988</p>
+                    </div>
+                    <img src="images/thehickory.jpg" alt="thehickory">
+                </section>
+            </div>
+            <div class="home_grid">
+                <img class="home_headline-1" id="article_pic" src="images/join_pic.jpg" alt="join_pic">
+                <h3 class="home_headline-1">Call to Join</h3>
+                <p class="home_paragraph-1">&emsp;&emsp;"The great City of Rexburg needs you, yes You!  According to the massive demographic boosts that our magnificent city
+                    is recieivng it looks like 2022 is going to be our busiest year yet! So if you are a fledgling entrepneur or an established head of a successful company
+                    please come on down to join the Rexburg Commercial Guild.  We have your growth as our goal!"
+            </div>
+            
+            <div class="home_grid">
+                <img class="home_headline-2" id="article_pic" src="images/event_pic.jpg" alt="pool_pic">
+                <h3 class="home_headline-2">Upcoming Events</h3>
+                <p class="home_paragraph-2">&emsp;&emsp;"Due to massive demand we are happy to announce the return of Rexburg's water park.  The park was closed temporarily
+                    due the restrictions that affected us all during the pandemic.  Luckily for the citizens of Rexburg, the restrictions are starting to lift.  This has
+                    given the City Council the hope and optimism to annouce the park's return.  Stay tuned for more annoucements."
+            </div>
+        </main>
+    <footer>
+        <div>
+            &copy;<span id="copyright"></span> | Carter W. Askelson | Idaho | <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+            <a href="https://www.facebook.com/">
+            <img class= "social" src="https://i.ibb.co/pxbPN2r/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.twitter.com">
+            <img class= "social" src="https://i.ibb.co/bPFbv3v/twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </footer>
+        <script src="js/javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfront/1.6.26/webfront.js"></script>
+    <script>WebFront.load({google: {families: ['Yaldevi', 'Arial']}})</script>
+</body>
+</html>
